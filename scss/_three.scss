@@ -1,0 +1,386 @@
+@import "main";
+
+#c2s,
+#c3s,
+#c4s,
+#c5s,
+#c6s,
+#c7s,
+#c8s,
+#c9s,
+#c10s {
+    display: flex;
+    justify-content: center;
+    height: 80%;
+
+    .fondo {
+        display: flex;
+        flex-flow: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        background-color: $colorbase;
+        box-shadow: 0px 0px 10px #969696;
+        border-radius: 15px;
+        position: relative;
+
+        img {
+            padding-left: 1rem;
+        }
+
+        >div {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            width: 80%;
+
+            .title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1rem 1rem 0rem 1rem;
+
+                h3 {
+
+                    color: $primary_darkest_color;
+                    font-family: $font_text;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    margin-bottom: 0px;
+                }
+            }
+
+            .info {
+                display: flex;
+                align-items: center;
+                border-radius: 0px 0px 15px 15px;
+                padding: .5rem;
+                text-align: center;
+                width: 90%;
+
+                h4 {
+                    font-family: $font_text;
+                    color: $primary_darkest_color;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 25px;
+                    margin: 0px;
+                }
+            }
+        }
+
+    }
+}
+
+
+#three {
+    height: 100vh;
+    flex-flow: column;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+
+    .glide2 {
+        max-height: 200px;
+        -webkit-mask-image: -webkit-linear-gradient(left, #00000000, black, black, black, black, black, black, #00000000);
+
+        .glide__slide {
+            display: flex;
+            align-items: center;
+            transition: all ease-in-out 0.2s;
+            height: 200px;
+        }
+
+    }
+
+}
+
+#c1s,
+.c1s {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        max-width: 550px;
+
+        h2 {
+            color: $primary_color;
+            font-weight: 600;
+            font-size: 3rem;
+            font-family: $font_text;
+
+            &.dark {
+                color: $primary_darkest_color;
+            }
+        }
+
+        h3 {
+            color: $primary_light_color;
+            font-family: $font_text;
+
+            &.dark {
+                color: $primary_color;
+            }
+        }
+
+        p {
+            color: $colorbase;
+            font-family: $font_text;
+            line-height: 25px;
+
+            &.dark {
+                color: $primary_darkest_color;
+            }
+        }
+
+        i,
+        h4 {
+            font-weight: 600;
+            display: inline-block;
+        }
+    }
+
+    .s {
+        max-width: 70%;
+
+        h2 {
+            color: $primary_darkest_color;
+        }
+
+        h3 {
+            color: $primary_color;
+        }
+
+        p {
+            color: $primary_darkest_color;
+        }
+    }
+}
+
+#portfolio {
+    justify-content: space-evenly;
+
+    #logo_client {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 5rem;
+
+        .client_marca {
+
+            height: 55px;
+            max-width: 250px;
+            margin-inline: 2rem;
+            display: flex;
+            align-items: center;
+
+        }
+    }
+
+    #carousel {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        border-radius: 15px;
+        padding: 0px;
+        background-color: #fcfcfc;
+        box-shadow: 0px 0px 10px #969696;
+
+
+
+        .carousel-item {
+            visibility: visible;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: flex-end;
+            -webkit-align-items: center;
+            -webkit-justify-content: flex-end;
+            position: relative;
+            background-color: #fff;
+            flex-shrink: 0;
+            -webkit-flex-shrink: 0;
+            position: absolute;
+            z-index: 0;
+            transition: 0.6s all linear;
+
+            .carousel-item__info {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                flex-flow: column wrap;
+
+                order: 1;
+                left: 0;
+                margin: auto;
+                padding: 0 40px;
+                width: 40%;
+
+            }
+
+            .carousel-item__image {
+                width: 60%;
+                height: 100%;
+                order: 2;
+                align-self: flex-end;
+                flex-basis: 60%;
+
+                -webkit-order: 2;
+                -webkit-align-self: flex-end;
+                -webkit-flex-basis: 60%;
+
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                transform: translateX(100%);
+                transition: 0.6s all ease-in-out;
+            }
+
+            .carousel-item__subtitle {
+                font-family: 'Open Sans', sans-serif;
+                letter-spacing: 3px;
+                font-size: 14px;
+                text-transform: uppercase;
+                margin: 0;
+                color: $primary_light_color;
+                font-weight: 700;
+                transform: translateY(25%);
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.4s all ease-in-out;
+            }
+
+            .carousel-item__title {
+                margin: 15px 0 0 0;
+                font-family: $font_title;
+                font-size: 2.8rem;
+                font-weight: 700;
+                color: $primary_darkest_color;
+                transform: translateY(25%);
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.6s all ease-in-out;
+            }
+
+            .carousel-item__description {
+                transform: translateY(25%);
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.6s all ease-in-out;
+                margin-top: 35px;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1rem;
+                color: #161616;
+                line-height: 22px;
+                margin-bottom: 35px;
+            }
+
+            &.carousel-item--1 .carousel-item__image {
+                background-image: url('../media/galeria/sociosred.jpg');
+            }
+
+
+            &.carousel-item--2 .carousel-item__image {
+                background-image: url('../media/galeria/sidra_neco_s.jpg');
+            }
+
+            &.carousel-item--3 .carousel-item__image {
+                background-image: url('../media/galeria/entrecasaredes.jpg');
+            }
+
+            &.carousel-item--4 .carousel-item__image {
+                background-image: url('../media/galeria/caja_quark.jpg');
+            }
+
+            &.carousel-item--5 .carousel-item__image {
+                background-image: url('../media/galeria/tarjetas_labmdo.jpg');
+            }
+        }
+
+        .carousel-item__container {}
+
+        .carousel-item__btn {
+            width: 35%;
+            color: $primary_color;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 3px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin: 0;
+            width: 35%;
+            font-weight: 700;
+            text-decoration: none;
+            transform: translateY(25%);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s all ease-in-out;
+
+            &:hover {
+                color: $primary_darkest_color;
+            }
+        }
+
+        .carousel__nav {
+            position: absolute;
+            right: 0;
+            z-index: 2;
+            background-color: #fff;
+            bottom: 0;
+        }
+
+        .carousel__icon {
+            display: inline-block;
+            vertical-align: middle;
+            width: 16px;
+            fill: #5d5d5d;
+        }
+
+        .carousel__arrow {
+            cursor: pointer;
+            display: inline-block;
+            padding: 11px 15px;
+            position: relative;
+        }
+
+        .carousel__arrow:nth-child(1):after {
+            content: '';
+            right: -3px;
+            position: absolute;
+            width: 1px;
+            background-color: #b0b0b0;
+            height: 14px;
+            top: 50%;
+            margin-top: -7px;
+        }
+
+        .active {
+            z-index: 1;
+            display: flex;
+            visibility: visible;
+        }
+
+        .active .carousel-item__subtitle,
+        .active .carousel-item__title,
+        .active .carousel-item__description,
+        .active .carousel-item__btn {
+            transform: translateY(0);
+            opacity: 1;
+            transition: 0.6s all ease-in-out;
+            visibility: visible;
+        }
+
+
+
+        .active .carousel-item__image {
+            transition: 0.6s all ease-in-out;
+            transform: translateX(0);
+        }
+
+    }
+}

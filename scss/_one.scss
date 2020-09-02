@@ -1,0 +1,39 @@
+@import "main";
+@import "links";
+@import "divisores";
+
+#one {
+    height: 100vh;
+    position: relative;
+
+    h1 {
+        color: $colorbase;
+        font-size: 4.5rem;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    h2 {
+        color: $colorbase;
+        font-family: $font_text;
+        font-weight: 600;
+        font-size: 1.5rem;
+        padding-left: 0px;
+        margin-bottom: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    span {
+        font-weight: 700;
+        color: $primary_color;
+    }
+
+    i,
+    h3 {
+        display: inline-block;
+        font-weight: 600;
+    }
+}

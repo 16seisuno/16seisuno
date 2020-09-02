@@ -1,0 +1,17 @@
+a.violet {
+    color: $primary_color;
+    text-decoration: none;
+
+    &hover {
+        color: $primary_darkest_color;
+    }
+}
+
+a.orange {
+    color: $tertiary_color;
+    text-decoration: none;
+
+    &hover {
+        color: $primary_darkest_color;
+    }
+}

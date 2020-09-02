@@ -1,0 +1,91 @@
+@for $n from 0 through 10 {
+    .pad_#{$n} {
+        padding: .5rem * $n;
+    }
+}
+
+@for $n from 0 through 10 {
+    .pad_inl_#{$n} {
+        padding-inline: .5rem * $n;
+        padding-left: .5rem * $n;
+        padding-right: .5rem * $n;
+    }
+}
+
+@for $n from 0 through 10 {
+    .pad_block_#{$n} {
+        padding-block: .5rem * $n;
+        padding-top: .5rem * $n;
+        padding-bottom: .5rem * $n;
+    }
+}
+
+@for $n from 0 through 10 {
+    .pad_l_#{$n} {
+        padding-left: .5rem * $n;
+    }
+}
+
+@for $n from 0 through 10 {
+    .pad_r_#{$n} {
+        padding-right: .5rem * $n;
+    }
+}
+
+@for $n from 0 through 10 {
+    .pad_b_#{$n} {
+        padding-bottom: .5rem * $n;
+    }
+}
+
+@for $n from 0 through 14 {
+    .pad_t_#{$n} {
+        padding-top: .5rem * $n;
+    }
+}
+
+@for $n from 0 through 10 {
+    .mar_#{$n} {
+        margin: .5rem * $n;
+    }
+}
+
+@for $n from 0 through 10 {
+    .mar_block_#{$n} {
+        margin-block: .5rem * $n;
+        margin-top: .5rem * $n;
+        margin-bottom: .5rem * $n;
+    }
+}
+
+@for $n from 0 through 10 {
+    .mar_inl_#{$n} {
+        margin-inline: .5rem * $n;
+        margin-left: .5rem * $n;
+        margin-right: .5rem * $n;
+    }
+}
+
+@for $n from 0 through 10 {
+    .mar_l_#{$n} {
+        margin-left: .5rem * $n;
+    }
+}
+
+@for $n from 0 through 10 {
+    .mar_r_#{$n} {
+        margin-right: .5rem * $n;
+    }
+}
+
+@for $n from 0 through 10 {
+    .mar_t_#{$n} {
+        margin-top: .5rem * $n;
+    }
+}
+
+@for $n from 0 through 10 {
+    .mar_b_#{$n} {
+        margin-bottom: .5rem * $n;
+    }
+}

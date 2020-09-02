@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../media/fondos/ocean.jpg);
+}
+
+$font_title: 'Jost',
+sans-serif;
+
+$font_text: 'Montserrat',
+sans-serif;
+;
+
+$primary_color: #7A5BFC;
+$primaryb_color: #897fb3;
+$primary_light_color: #B8A7FD;
+$primary_dark_color:#3D2D7D;
+$primary_darkest_color: #1E163D;
+$secondary_color: #33CCCC;
+$tertiary_color: #FF9900;
+$tertiary_light_color: #FFBB50;
+$colorbase: #fcfcfc;
+
+.row,
+.container-fluid {
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    width: 100%;
+}
+
+.textura {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $primary_darkest_color;
+    mix-blend-mode: color;
+}
+
+.textura_l {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $colorbase;
+    mix-blend-mode: exclusion;
+    z-index: -1;
+}
+
+.textura_orange {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffc364;
+    mix-blend-mode: difference;
+    z-index: -1;
+}

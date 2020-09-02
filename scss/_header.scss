@@ -1,0 +1,21 @@
+header {
+    position: absolute;
+    z-index: 100;
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #fcfcfc;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #B8A7FD;
+    }
+
+    .navbar-light .navbar-nav .active>.nav-link {
+        color: #855cff;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
